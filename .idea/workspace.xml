@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/Lab1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1/src/Solver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PPD-LAB.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/Utils.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Utils/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1InClass/Lab1InClass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1InClass/src/LabInClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab1/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_in/matrix10x10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_in/matrix10x10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_in/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_in/test2.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,20 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Solver">
+    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Generator" />
+      <module name="Lab1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LabInClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LabInClass" />
+      <module name="Lab1InClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Utils" />
@@ -75,6 +87,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Solver" />
+        <item itemvalue="Application.Generator" />
+        <item itemvalue="Application.LabInClass" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -91,6 +105,17 @@
       <workItem from="1665220384676" duration="56000" />
       <workItem from="1665328325130" duration="8533000" />
       <workItem from="1665416588976" duration="1047000" />
+      <workItem from="1665433966828" duration="6000" />
+      <workItem from="1665433988132" duration="378000" />
+      <workItem from="1665499495663" duration="732000" />
+      <workItem from="1665659210165" duration="5720000" />
+      <workItem from="1665776725509" duration="2932000" />
+      <workItem from="1665816328852" duration="6969000" />
+      <workItem from="1665908869943" duration="1312000" />
+      <workItem from="1666264827158" duration="2845000" />
+      <workItem from="1666440539996" duration="9095000" />
+      <workItem from="1666704873350" duration="1445000" />
+      <workItem from="1666726716831" duration="2000" />
     </task>
     <servers />
   </component>
@@ -113,17 +138,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab1/src/Solver.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Lab1/src/Solver.java</url>
-          <line>46</line>
+          <line>102</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab1/src/Solver.java</url>
-          <line>47</line>
+          <line>104</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
