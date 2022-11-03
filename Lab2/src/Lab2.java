@@ -17,11 +17,14 @@ public class Lab2 {
             new double[] {0, -1, 0},
     };
     static CyclicBarrier barrier;
-    static String matrixPath = "E:\\PPD\\LAB\\PPD-LAB\\Parallel-and-Distributed-Programming\\test_in\\matrix1000x1000.txt";
-    static String wPath = "E:\\PPD\\LAB\\PPD-LAB\\Parallel-and-Distributed-Programming\\test_in\\w5x5.txt";
+//    static String matrixPath = "E:\\PPD\\LAB\\PPD-LAB\\Parallel-and-Distributed-Programming\\test_in\\matrix1000x1000.txt";
+//    static String wPath = "E:\\PPD\\LAB\\PPD-LAB\\Parallel-and-Distributed-Programming\\test_in\\w5x5.txt";
+
+    static String matrixPath=".\\matrix.txt";
+    static String wPath=".\\w.txt";
 
     public static void main(String[] args) {
-        int noThreads = 2;
+        int noThreads = Integer.valueOf(args[0]);
         double[][] inputMatrix =
                 readMatrixFromFile(matrixPath);
         double[][] w = readMatrixFromFile(wPath);
@@ -34,13 +37,7 @@ public class Lab2 {
         calculateMatrixParallel(inputMatrix, w, noThreads);
         long end = System.nanoTime();
         System.out.println((double)(end - start)/1E6);//ms
-        // TODO - remove borders?
-//        for(int i = w.length / 2 ; i < inputMatrix.length-w.length/2; i++) {
-//            for(int j = w.length / 2 ; j < inputMatrix[0].length - w.length / 2; j++) {
-//                System.out.print(inputMatrix[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
+
     }
 
     private static void calculateMatrixParallel(double[][] inputMatrix, double[][] W, int noThreads) {

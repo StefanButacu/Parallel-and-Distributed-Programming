@@ -4,17 +4,10 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab2/Lab2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab2/src/Lab2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab2 finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/Testing/Rezultate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/Testing/Rezultate.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab1/src/Solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab1/src/Lab1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_out/example.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_out/out10x10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/Testing/RezultateLab2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/Testing/RezultateLab2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab2/src/Lab2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/Lab2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +52,7 @@
       <recent name="E:\PPD\LAB\PPD-LAB" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lab1">
+  <component name="RunManager" selected="Application.Lab2">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Generator" />
       <module name="Lab1" />
@@ -97,8 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lab1" />
         <item itemvalue="Application.Lab2" />
+        <item itemvalue="Application.Lab1" />
         <item itemvalue="Application.Generator" />
         <item itemvalue="Application.LabInClass" />
         <item itemvalue="Application.Main" />
@@ -132,7 +125,11 @@
       <workItem from="1666868788878" duration="2600000" />
       <workItem from="1666877095199" duration="2162000" />
       <workItem from="1667056021738" duration="16881000" />
-      <workItem from="1667118470328" duration="5504000" />
+      <workItem from="1667118470328" duration="5778000" />
+      <workItem from="1667127759955" duration="697000" />
+      <workItem from="1667129301406" duration="97000" />
+      <workItem from="1667131025538" duration="29000" />
+      <workItem from="1667477358380" duration="1819000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -141,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666814042397</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lab2 finish">
+      <created>1667126676873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667126676873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +175,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="Lab2 finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2 finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -188,27 +193,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>181</line>
+          <line>176</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>169</line>
+          <line>164</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>176</line>
+          <line>171</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>47</line>
+          <line>42</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>50</line>
+          <line>45</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
