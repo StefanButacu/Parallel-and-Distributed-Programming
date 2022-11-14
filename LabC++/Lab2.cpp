@@ -202,15 +202,6 @@ int main(int argc, char** argv) {
     auto endTime = chrono::high_resolution_clock::now();
     double durata = chrono::duration<double, milli>(endTime - startTime).count();
     cout << durata;
-    rout.precision(16);
-    for (int i = k/2; i < newM - k /2; i++) {
-        for (int j = k/2; j < newN - k / 2; j++) {
-            rout << inputMatrix[i][j] << ' ';
-        }
-        rout << endl;
-    }
-    rout.close();
-
     for (int i = 0; i < newM; ++i)
         delete[] inputMatrix[i];
     delete[] inputMatrix;
