@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab2 finish">
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab2 - wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/Testing/RezultateLab2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/Testing/RezultateLab2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab2/src/Lab2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/Lab2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,8 @@
       <workItem from="1667127759955" duration="697000" />
       <workItem from="1667129301406" duration="97000" />
       <workItem from="1667131025538" duration="29000" />
-      <workItem from="1667477358380" duration="1819000" />
+      <workItem from="1667477358380" duration="2942000" />
+      <workItem from="1667480756034" duration="744000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -145,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667126676873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lab2 - wip">
+      <created>1667479615923</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667479615923</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +183,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="Lab2 finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2 finish" />
+    <MESSAGE value="Lab2 - wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab2 - wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -193,7 +201,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
-          <line>176</line>
+          <line>195</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
