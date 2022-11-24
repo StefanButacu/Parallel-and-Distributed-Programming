@@ -4,13 +4,14 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab2 - finsih">
-      <change afterPath="$PROJECT_DIR$/Lab4/Lab4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/src/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- adds polynomial data structure">
+      <change afterPath="$PROJECT_DIR$/Lab4/resources/polynom-1.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/src/MyQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/Lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/Lab4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/MyList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="E:\PPD\LAB\PPD-LAB" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.PolynomialGenerator">
     <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Generator" />
       <module name="Lab1" />
@@ -77,13 +78,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LabInClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LabInClass" />
-      <module name="Lab1InClass" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab4" />
@@ -91,13 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PolynomialGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PolynomialGenerator" />
+      <module name="Lab4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PolynomialGenerator" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Lab2" />
         <item itemvalue="Application.Lab1" />
         <item itemvalue="Application.Generator" />
-        <item itemvalue="Application.LabInClass" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +134,7 @@
       <workItem from="1667129301406" duration="97000" />
       <workItem from="1667131025538" duration="29000" />
       <workItem from="1667477358380" duration="1819000" />
-      <workItem from="1669304910838" duration="4401000" />
+      <workItem from="1669304910838" duration="17876000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667126676873</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lab4- adds polynomial data structure">
+      <created>1669310011849</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669310011849</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +188,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <MESSAGE value="Lab2 finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab2 finish" />
+    <MESSAGE value="Lab4- adds polynomial data structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4- adds polynomial data structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -221,21 +230,16 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Lab4/src/MyList.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/Lab4/src/Main.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Lab4/src/MyList.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/Lab4/src/Main.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="prev.next" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
