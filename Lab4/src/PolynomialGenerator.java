@@ -5,11 +5,16 @@ import java.io.IOException;
 import java.util.Random;
 
 public class PolynomialGenerator {
-   static int maxGrade = 100;
-    static int maxSize = 4;
-   static int polynomialNumber = 1;
+   static int maxGrade = 5;
+    static int maxSize = 5;
+   static int polynomialNumber = 5;
 
     public static void main(String[] args) {
+        if(args.length >= 3){
+            maxGrade = Integer.valueOf(args[0]);
+            maxSize = Integer.valueOf(args[1]);
+            polynomialNumber = Integer.valueOf(args[2]);
+        }
         generatePolynomials();
     }
     static void generatePolynomials(){
@@ -19,7 +24,7 @@ public class PolynomialGenerator {
             createEmptyFile(filename);
             try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename))) {
                 int randomSize = 1 + rand.nextInt(maxSize);
-                bufferedWriter.write(String.valueOf(randomSize) + "\n");
+//                bufferedWriter.write(String.valueOf(randomSize) + "\n");
                 for (int i = 0; i < randomSize; i++) {
                     int coef = 1 + rand.nextInt(100);
                     int exp = rand.nextInt(maxGrade + 1);

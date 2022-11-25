@@ -4,14 +4,13 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- adds polynomial data structure">
-      <change afterPath="$PROJECT_DIR$/Lab4/resources/polynom-1.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/src/MyQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- threads-add wip + PolynomialGenerator">
+      <change afterPath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/Lab4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/Lab4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,14 +55,7 @@
       <recent name="E:\PPD\LAB\PPD-LAB" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PolynomialGenerator">
-    <configuration name="Generator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Generator" />
-      <module name="Lab1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SequentialSolve">
     <configuration name="Lab1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab1" />
       <module name="Lab1" />
@@ -92,13 +84,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SequentialSolve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SequentialSolve" />
+      <module name="Lab4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SequentialSolve" />
         <item itemvalue="Application.PolynomialGenerator" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Lab2" />
         <item itemvalue="Application.Lab1" />
-        <item itemvalue="Application.Generator" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +133,8 @@
       <workItem from="1667129301406" duration="97000" />
       <workItem from="1667131025538" duration="29000" />
       <workItem from="1667477358380" duration="1819000" />
-      <workItem from="1669304910838" duration="17876000" />
+      <workItem from="1669304910838" duration="18132000" />
+      <workItem from="1669371426006" duration="1978000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669310011849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lab4- threads-add wip + PolynomialGenerator">
+      <created>1669326928584</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669326928584</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +196,8 @@
     <MESSAGE value="commit" />
     <MESSAGE value="Lab2 finish" />
     <MESSAGE value="Lab4- adds polynomial data structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4- adds polynomial data structure" />
+    <MESSAGE value="Lab4- threads-add wip + PolynomialGenerator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4- threads-add wip + PolynomialGenerator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
