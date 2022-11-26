@@ -1,15 +1,13 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.util.List;
 
 public class ParallelSolve {
 
     public static void main(String[] args) {
-        String filename = "Lab4/resources/polynom[0].in";
         int n = 5;
+        int polinomialNumber = 3;
         MyQueue myQueue = new MyQueue();
-        Thread reader = new Thread(new Producer(filename, myQueue, n-1));
+        Thread reader = new Thread(new Producer(myQueue, n-1, polinomialNumber));
         Thread[] workers = new Thread[n-1];
         MyList result = new MyList();
         for(int i = 0 ; i < n-1; i++) {
@@ -29,8 +27,15 @@ public class ParallelSolve {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        List<Node> resultNodes = result.getResultSum();
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynomPar.out"))){
+            for(Node node: resultNodes){
+                bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-        result.getResultSum();
     }
     static class Worker implements Runnable{
 
@@ -65,35 +70,38 @@ public class ParallelSolve {
     }
     static class Producer implements Runnable{
 
-        String filename;
         int nrOfWorkers;
         MyQueue myQueue;
-        public Producer(String filename, MyQueue myQueue, int nrOfWorkers) {
-            this.filename = filename;
+        int polynomialNumber;
+        public Producer(MyQueue myQueue, int nrOfWorkers, int polynomialNumber) {
             this.myQueue = myQueue;
             this.nrOfWorkers = nrOfWorkers;
+            this.polynomialNumber = polynomialNumber;
         }
 
         @Override
         public void run() {
-            try(BufferedReader bufferedReader = new BufferedReader(new BufferedReader(new FileReader(filename)))) {
-                String line;
-                while( (line = bufferedReader.readLine()) != null){
-                    if(line.equals(""))
-                        continue;
-                    String[] numbers = line.split(" ");
-                    Integer coef = Integer.valueOf(numbers[0]);
-                    Integer exp = Integer.valueOf(numbers[1]);
-                    Node node = new Node(coef, exp);
-                    myQueue.add(node);
+            for(int nr = 0; nr < polynomialNumber; nr++) {
+                String filename = "Lab4/resources/polynom[" + nr + "].in";
+                try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filename))) {
+                    String line;
+                    while ((line = bufferedReader.readLine()) != null) {
+                        if (line.equals(""))
+                            continue;
+                        String[] numbers = line.split(" ");
+                        Integer coef = Integer.valueOf(numbers[0]);
+                        Integer exp = Integer.valueOf(numbers[1]);
+                        Node node = new Node(coef, exp);
+                        myQueue.add(node);
+                    }
+                } catch (FileNotFoundException e) {
+                    throw new RuntimeException(e);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
                 }
-                myQueue.stop(nrOfWorkers);
-
-            } catch (FileNotFoundException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
             }
+            myQueue.stop(nrOfWorkers);
+
         }
     }
 }

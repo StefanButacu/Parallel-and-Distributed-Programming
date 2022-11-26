@@ -4,7 +4,7 @@ import java.util.List;
 public class SequentialSolve {
 
     static MyList resultList = new MyList();
-    static int polynomialNumber = 1;
+    static int polynomialNumber = 3;
 
     public static void main(String[] args) {
         if(args.length >= 1){
@@ -30,7 +30,7 @@ public class SequentialSolve {
             }
         }
         List<Node> resultNodes = resultList.getResultSum();
-        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynom.out"))){
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynomSeq.out"))){
             for(Node node: resultNodes){
                 bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");
             }
