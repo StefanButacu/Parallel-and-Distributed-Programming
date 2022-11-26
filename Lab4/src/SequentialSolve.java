@@ -29,7 +29,7 @@ public class SequentialSolve {
                 throw new RuntimeException(e);
             }
         }
-        List<Node> resultNodes = resultList.printNodes();
+        List<Node> resultNodes = resultList.getResultSum();
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynom.out"))){
             for(Node node: resultNodes){
                 bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");

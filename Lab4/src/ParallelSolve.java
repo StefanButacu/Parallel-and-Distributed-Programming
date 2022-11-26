@@ -3,10 +3,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Main {
+public class ParallelSolve {
 
     public static void main(String[] args) {
-        String filename = "Lab4/resources/polynom-1.in";
+        String filename = "Lab4/resources/polynom[0].in";
         int n = 5;
         MyQueue myQueue = new MyQueue();
         Thread reader = new Thread(new Producer(filename, myQueue, n-1));
@@ -30,7 +30,7 @@ public class Main {
             throw new RuntimeException(e);
         }
 
-        result.printNodes();
+        result.getResultSum();
     }
     static class Worker implements Runnable{
 
@@ -44,7 +44,7 @@ public class Main {
 
         @Override
         public void run() {
-//            System.out.println("Thread started " + Thread.currentThread().getId());
+            System.out.println("Thread started " + Thread.currentThread().getId());
             Node node = null;
             try {
                 node = myQueue.poll();

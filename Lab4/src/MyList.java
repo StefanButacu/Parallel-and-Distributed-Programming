@@ -40,7 +40,7 @@ public class MyList {
         prev.next = current.next;
     }
 
-    public List<Node> printNodes() {
+    public List<Node> getResultSum() {
         List<Node> result = new ArrayList<>();
         for (Node current = sentinelHead.next; current != null; current = current.next) {
             System.out.println(current.coefficient + " * x ^" + current.exponent);
