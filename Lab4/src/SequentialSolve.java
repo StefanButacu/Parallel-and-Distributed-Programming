@@ -4,7 +4,7 @@ import java.util.List;
 public class SequentialSolve {
 
     static MyList resultList = new MyList();
-    static int polynomialNumber = 5;
+    static int polynomialNumber = 1;
 
     public static void main(String[] args) {
         if(args.length >= 1){

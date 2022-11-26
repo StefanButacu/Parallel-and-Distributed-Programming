@@ -4,10 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- added sequential solve">
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- wip">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/MyQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +134,7 @@
       <workItem from="1669304910838" duration="18132000" />
       <workItem from="1669371426006" duration="2695000" />
       <workItem from="1669374507021" duration="35000" />
+      <workItem from="1669478062804" duration="4971000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -169,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669373656604</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lab4- wip">
+      <created>1669478162126</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669478162126</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,7 +212,8 @@
     <MESSAGE value="Lab4- adds polynomial data structure" />
     <MESSAGE value="Lab4- threads-add wip + PolynomialGenerator" />
     <MESSAGE value="Lab4- added sequential solve" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4- added sequential solve" />
+    <MESSAGE value="Lab4- wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4- wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -250,7 +260,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab4/src/ParallelSolve.java</url>
-          <line>88</line>
+          <line>89</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>

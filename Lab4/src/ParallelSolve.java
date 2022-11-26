@@ -51,6 +51,7 @@ public class ParallelSolve {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+
             while (node != null) {
                 result.addNode(node);
                 try {
