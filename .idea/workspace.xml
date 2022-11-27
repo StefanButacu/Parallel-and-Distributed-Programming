@@ -4,9 +4,8 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- solved issue with workers sleeping forever">
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- solved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab4/resources/polynom-1.in" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" afterDir="false" />
@@ -135,7 +134,8 @@
       <workItem from="1669304910838" duration="18132000" />
       <workItem from="1669371426006" duration="2695000" />
       <workItem from="1669374507021" duration="35000" />
-      <workItem from="1669478062804" duration="6854000" />
+      <workItem from="1669478062804" duration="7530000" />
+      <workItem from="1669540812292" duration="615000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -186,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669494960213</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Lab4- solved">
+      <created>1669496738658</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669496738658</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +229,8 @@
     <MESSAGE value="Lab4- added sequential solve" />
     <MESSAGE value="Lab4- wip" />
     <MESSAGE value="Lab4- solved issue with workers sleeping forever" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4- solved issue with workers sleeping forever" />
+    <MESSAGE value="Lab4- solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab4- solved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -261,11 +269,6 @@
           <url>file://$PROJECT_DIR$/Lab2/src/Lab2.java</url>
           <line>45</line>
           <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Lab4/src/ParallelSolve.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

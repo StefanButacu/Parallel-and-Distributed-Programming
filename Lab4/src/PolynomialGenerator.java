@@ -24,7 +24,6 @@ public class PolynomialGenerator {
             createEmptyFile(filename);
             try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename))) {
                 int randomSize = 1 + rand.nextInt(maxSize);
-//                bufferedWriter.write(String.valueOf(randomSize) + "\n");
                 for (int i = 0; i < randomSize; i++) {
                     int coef = 1 + rand.nextInt(100);
                     int exp = rand.nextInt(maxGrade + 1);

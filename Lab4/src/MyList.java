@@ -43,7 +43,6 @@ public class MyList {
     public List<Node> getResultSum() {
         List<Node> result = new ArrayList<>();
         for (Node current = sentinelHead.next; current != null; current = current.next) {
-            System.out.println(current.coefficient + " * x ^" + current.exponent);
             result.add(current);
         }
         return result;

@@ -10,6 +10,8 @@ public class SequentialSolve {
         if(args.length >= 1){
             polynomialNumber = Integer.valueOf(args[0]);
         }
+        long start = System.nanoTime();
+
         for(int nr = 0; nr < polynomialNumber; nr++) {
             String filename = "Lab4/resources/polynom[" + nr + "].in";
             try(BufferedReader bufferedReader = new BufferedReader(new FileReader(filename))) {
@@ -30,12 +32,14 @@ public class SequentialSolve {
             }
         }
         List<Node> resultNodes = resultList.getResultSum();
-        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynomSeq.out"))){
+        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynomeSeq.out"))){
             for(Node node: resultNodes){
                 bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        long end = System.nanoTime();
+        System.out.println((double)(end - start)/1E6);//ms
     }
 }

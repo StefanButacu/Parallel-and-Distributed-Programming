@@ -3,25 +3,27 @@ import java.util.List;
 
 public class ParallelSolve {
 
+    static int nrOfThreads;
+    static int polynomialNumber;
     public static void main(String[] args) {
-        int n = 5;
-        int polinomialNumber = 3;
+        nrOfThreads = args.length > 1 ? Integer.valueOf(args[0])  : 5;
+        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 3;
         MyQueue myQueue = new MyQueue();
-        Thread reader = new Thread(new Producer(myQueue, n-1, polinomialNumber));
-        Thread[] workers = new Thread[n-1];
+        Thread reader = new Thread(new Producer(myQueue, nrOfThreads-1, polynomialNumber));
+        Thread[] workers = new Thread[nrOfThreads-1];
         MyList result = new MyList();
-        for(int i = 0 ; i < n-1; i++) {
+        for(int i = 0 ; i < nrOfThreads-1; i++) {
             workers[i] = new Thread(new Worker(myQueue, result));
         }
-
+        long start = System.nanoTime();
         reader.start();
-        for(int i = 0 ; i < n-1; i++) {
+        for(int i = 0 ; i < nrOfThreads-1; i++) {
             workers[i].start();
         }
 
         try {
             reader.join();
-            for(int i = 0 ; i < n-1; i++) {
+            for(int i = 0 ; i < nrOfThreads-1; i++) {
                 workers[i].join();
             }
         } catch (InterruptedException e) {
@@ -35,7 +37,8 @@ public class ParallelSolve {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+        long end = System.nanoTime();
+        System.out.println((double)(end - start)/1E6);//ms
     }
     static class Worker implements Runnable{
 
@@ -49,7 +52,6 @@ public class ParallelSolve {
 
         @Override
         public void run() {
-            System.out.println("Thread started " + Thread.currentThread().getId());
             Node node = null;
             try {
                 node = myQueue.poll();
