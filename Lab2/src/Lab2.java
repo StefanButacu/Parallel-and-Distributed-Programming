@@ -56,8 +56,8 @@ public class Lab2 {
             threads[i].start();
             start = end + 1;
             end += size / noThreads;
-
         }
+
         for(int i = 0 ; i < noThreads; i++){
             try {
                 threads[i].join();
