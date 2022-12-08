@@ -4,10 +4,10 @@ import java.util.List;
 public class ParallelSolve {
 
     static int nrOfThreads;
-    static int polynomialNumber;
+    static int polynomialNumber = 5;
     public static void main(String[] args) {
-        nrOfThreads = args.length > 1 ? Integer.valueOf(args[0])  : 5;
-        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 3;
+        nrOfThreads = args.length > 1 ? Integer.valueOf(args[0])  : 4;
+//        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 3;
         MyQueue myQueue = new MyQueue();
         Thread reader = new Thread(new Producer(myQueue, nrOfThreads-1, polynomialNumber));
         Thread[] workers = new Thread[nrOfThreads-1];
@@ -30,15 +30,17 @@ public class ParallelSolve {
             throw new RuntimeException(e);
         }
         List<Node> resultNodes = result.getResultSum();
+        long end = System.nanoTime();
+        System.out.println((double)(end - start)/1E6);//ms
+
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab4/resources/polynomPar.out"))){
+//        try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("polynomPar.out"))){
             for(Node node: resultNodes){
                 bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        long end = System.nanoTime();
-        System.out.println((double)(end - start)/1E6);//ms
     }
     static class Worker implements Runnable{
 
@@ -84,6 +86,7 @@ public class ParallelSolve {
         @Override
         public void run() {
             for(int nr = 0; nr < polynomialNumber; nr++) {
+//                String filename = "polynom[" + nr + "].in";
                 String filename = "Lab4/resources/polynom[" + nr + "].in";
                 try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filename))) {
                     String line;

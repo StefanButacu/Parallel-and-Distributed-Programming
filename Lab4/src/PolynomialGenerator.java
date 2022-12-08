@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.Random;
 
 public class PolynomialGenerator {
-   static int maxGrade = 1000;
-    static int maxSize = 50;
-   static int polynomialNumber = 10;
+   static int maxGrade = 10000;
+    static int maxSize = 100;
+   static int polynomialNumber = 5;
 
     public static void main(String[] args) {
         if(args.length >= 3){
@@ -25,7 +25,7 @@ public class PolynomialGenerator {
             try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(filename))) {
                 int randomSize = 1 + rand.nextInt(maxSize);
                 for (int i = 0; i < randomSize; i++) {
-                    int coef = 1 + rand.nextInt(100);
+                    int coef = 1 + rand.nextInt(100) - 50;
                     int exp = rand.nextInt(maxGrade + 1);
                     bufferedWriter.write(coef + " " + exp + "\n");
                 }

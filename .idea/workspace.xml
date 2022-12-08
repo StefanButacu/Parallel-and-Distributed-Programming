@@ -4,11 +4,11 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- adds measurements for time">
-      <change afterPath="$PROJECT_DIR$/Lab5/Lab5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab5 - added more producers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab2/src/Lab2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab2/src/Lab2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/ParallelSolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/PolynomialGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab4/src/SequentialSolve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,21 +35,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "extract.method.default.visibility": "private",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "E:/PPD/LAB/PPD-LAB/Parallel-and-Distributed-Programming/Lab5/resources",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/PPD/LAB/PPD-LAB/Parallel-and-Distributed-Programming&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PPD\LAB\PPD-LAB\Parallel-and-Distributed-Programming\Lab5\resources" />
@@ -59,7 +59,7 @@
       <recent name="E:\PPD\LAB\PPD-LAB" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ParallelSolve (1)">
+  <component name="RunManager" selected="Application.SequentialSolve">
     <configuration name="Lab2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lab2" />
       <module name="Lab2" />
@@ -97,10 +97,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParallelSolve (1)" />
         <item itemvalue="Application.SequentialSolve" />
         <item itemvalue="Application.ParallelSolve" />
         <item itemvalue="Application.PolynomialGenerator" />
+        <item itemvalue="Application.ParallelSolve (1)" />
         <item itemvalue="Application.Lab2" />
       </list>
     </recent_temporary>
@@ -142,7 +142,10 @@
       <workItem from="1669374507021" duration="35000" />
       <workItem from="1669478062804" duration="7530000" />
       <workItem from="1669540812292" duration="2219000" />
-      <workItem from="1670075922743" duration="3452000" />
+      <workItem from="1670075922743" duration="4177000" />
+      <workItem from="1670183170320" duration="3985000" />
+      <workItem from="1670440862313" duration="4955000" />
+      <workItem from="1670501348293" duration="3586000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -207,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669541624669</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lab5 - added more producers">
+      <created>1670079493347</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670079493347</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +255,8 @@
     <MESSAGE value="Lab4- solved issue with workers sleeping forever" />
     <MESSAGE value="Lab4- solved" />
     <MESSAGE value="Lab4- adds measurements for time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4- adds measurements for time" />
+    <MESSAGE value="Lab5 - added more producers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5 - added more producers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

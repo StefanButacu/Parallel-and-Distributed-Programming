@@ -12,17 +12,4 @@ public class Node {
         this.coefficient = coefficient;
         this.exponent = exponent;
     }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Node node = (Node) o;
-        return coefficient == node.coefficient && exponent == node.exponent;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(coefficient, exponent);
-    }
 }
