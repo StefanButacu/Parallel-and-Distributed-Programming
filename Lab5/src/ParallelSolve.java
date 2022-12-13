@@ -7,14 +7,14 @@ public class ParallelSolve {
 
     static int nrOfThreads;
     static int nrOfProducers;
-    static int polynomialNumber;
+    static int polynomialNumber = 10;
     static int nrOfWorkers;
 
     static CyclicBarrier producersBarrier;
 
     public static void main(String[] args) {
         nrOfThreads = args.length > 1 ? Integer.valueOf(args[0])  : 5;
-        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 5;
+//        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 2;
         nrOfProducers = 2;
         nrOfWorkers = nrOfThreads - nrOfProducers;
         MyQueue myQueue = new MyQueue();
