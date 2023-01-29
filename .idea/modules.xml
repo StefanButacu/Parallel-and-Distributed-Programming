@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ClientServer/ClientServer.iml" filepath="$PROJECT_DIR$/ClientServer/ClientServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ContBancar/ContBancar.iml" filepath="$PROJECT_DIR$/ContBancar/ContBancar.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1/Lab1.iml" filepath="$PROJECT_DIR$/Lab1/Lab1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab1InClass/Lab1InClass.iml" filepath="$PROJECT_DIR$/Lab1InClass/Lab1InClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab2/Lab2.iml" filepath="$PROJECT_DIR$/Lab2/Lab2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab4/Lab4.iml" filepath="$PROJECT_DIR$/Lab4/Lab4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lab5/Lab5.iml" filepath="$PROJECT_DIR$/Lab5/Lab5.iml" />
       <module fileurl="file://$PROJECT_DIR$/PPD-LAB.iml" filepath="$PROJECT_DIR$/PPD-LAB.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Robots/Robots.iml" filepath="$PROJECT_DIR$/Robots/Robots.iml" />
       <module fileurl="file://$PROJECT_DIR$/Utils/Utils.iml" filepath="$PROJECT_DIR$/Utils/Utils.iml" />
     </modules>
   </component>
