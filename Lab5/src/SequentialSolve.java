@@ -4,7 +4,7 @@ import java.util.List;
 public class SequentialSolve {
 
     static MyList resultList = new MyList();
-    static int polynomialNumber = 10;
+    static int polynomialNumber = 5;
 
     public static void main(String[] args) {
         long start = System.nanoTime();

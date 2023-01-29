@@ -16,12 +16,6 @@ public class MyList {
         prev.lock();
         Node current = sentinelHead.next;
         current.lock();
-
-        if (current == sentinelTail) {
-            node.next = sentinelTail;
-            sentinelHead.next = node;
-        }
-
         while( current != sentinelTail) {
             if (node.exponent == current.exponent) {
                 current.coefficient += node.coefficient;
@@ -43,12 +37,10 @@ public class MyList {
             current = current.next;
             current.lock();
         }
-
         if (current == sentinelTail) {
             node.next = sentinelTail;
             prev.next = node;
         }
-
         prev.lock.unlock();
         current.lock.unlock();
     }

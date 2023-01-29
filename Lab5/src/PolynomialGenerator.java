@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.util.Random;
 
 public class PolynomialGenerator {
-   static int maxGrade = 10000;
-    static int maxSize = 100;
-   static int polynomialNumber = 10;
+   static int maxGrade = 10000 ;
+    static int maxSize = 100 ;
+   static int polynomialNumber = 5;
 
     public static void main(String[] args) {
         if(args.length >= 3){

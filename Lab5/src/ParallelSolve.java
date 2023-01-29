@@ -2,20 +2,22 @@ import java.io.*;
 import java.util.List;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class ParallelSolve {
 
     static int nrOfThreads;
     static int nrOfProducers;
-    static int polynomialNumber = 10;
+    static int polynomialNumber = 5;
     static int nrOfWorkers;
 
     static CyclicBarrier producersBarrier;
 
     public static void main(String[] args) {
-        nrOfThreads = args.length > 1 ? Integer.valueOf(args[0])  : 5;
+        nrOfThreads = 4;
 //        polynomialNumber = args.length > 2 ? Integer.valueOf(args[1]) : 2;
-        nrOfProducers = 2;
+        nrOfProducers = 3;
         nrOfWorkers = nrOfThreads - nrOfProducers;
         MyQueue myQueue = new MyQueue();
         Thread[] readers = new Thread[nrOfProducers];
@@ -57,6 +59,9 @@ public class ParallelSolve {
             throw new RuntimeException(e);
         }
         List<Node> resultNodes = result.getResultSum();
+        long endTime = System.nanoTime();
+        System.out.println((double)(endTime - startTime)/1E6);//ms
+
         try(BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("Lab5/resources/polynomPar.out"))){
             for(Node node: resultNodes){
                 bufferedWriter.write(node.coefficient + " " + node.exponent + "\n");
@@ -64,11 +69,8 @@ public class ParallelSolve {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        long endTime = System.nanoTime();
-        System.out.println((double)(endTime - startTime)/1E6);//ms
     }
     static class Worker implements Runnable{
-
         MyQueue myQueue;
         MyList result;
 

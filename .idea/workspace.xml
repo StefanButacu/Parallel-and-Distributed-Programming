@@ -4,13 +4,15 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab4- presentation">
-      <change afterPath="$PROJECT_DIR$/Lab5/src/SequentialSolve.java" afterDir="false" />
+    <list default="true" id="752ff5ae-7636-45dd-a882-ac945e3ded91" name="Changes" comment="Lab5 - finish">
+      <change afterPath="$PROJECT_DIR$/ClientServer/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab5/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/MyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lab5/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/src/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/MyQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab5/src/ParallelSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/ParallelSolve.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lab5/src/PolynomialGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/PolynomialGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab5/src/SequentialSolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab5/src/SequentialSolve.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +161,10 @@
       <workItem from="1670501348293" duration="3586000" />
       <workItem from="1670524714254" duration="2565000" />
       <workItem from="1670928904854" duration="1265000" />
-      <workItem from="1670951801169" duration="2261000" />
+      <workItem from="1670951801169" duration="5651000" />
+      <workItem from="1671110818996" duration="1344000" />
+      <workItem from="1673292121799" duration="1260000" />
+      <workItem from="1674912295145" duration="4382000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1666814042397</created>
@@ -238,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670524746457</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lab5 - finish">
+      <created>1670954098604</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1670954098604</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +290,8 @@
     <MESSAGE value="Lab4- adds measurements for time" />
     <MESSAGE value="Lab5 - added more producers" />
     <MESSAGE value="Lab4- presentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lab4- presentation" />
+    <MESSAGE value="Lab5 - finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab5 - finish" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -320,7 +333,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Lab5/src/MyList.java</url>
-          <line>57</line>
+          <line>49</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

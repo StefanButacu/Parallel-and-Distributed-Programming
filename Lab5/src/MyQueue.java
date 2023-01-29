@@ -5,10 +5,8 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class MyQueue {
-    final Integer MAX_SIZE = 5;
-
+    final Integer MAX_SIZE = 30;
     final Node[] items = new Node[MAX_SIZE];
-
     final Lock lock = new ReentrantLock();
     final Condition notFull = lock.newCondition();
     final Condition notEmpty = lock.newCondition();
